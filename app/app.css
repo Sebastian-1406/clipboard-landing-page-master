@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde : hsl(171, 66%, 44%);
+    --azul : hsl(233, 100%, 69%);
+    --gris : hsl(210, 10%, 33%);
+    --plomo : hsl(201, 11%, 66%);
+}
+
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.parrafo {
+    font-size: 14px;
+    color: var(--plomo);
+}
+.titulo {
+    color: var(--gris);
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-fondo{
+    position: relative;
+}
+.header-fondo .mobile{
+    width: 100%;
+}
+.header-fondo .desktop {
+    display: none;
+}
+.header-fondo .logo{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;    
+    left: 0;
+    margin: auto;
+}
+.header-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+.header-texto .titulo {
+    text-align: center;
+    font-size: 25px;
+}
+.header-texto .parrafo {
+    text-align: center;
+}
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn {
+    padding: 14px;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #eeee;
+    box-shadow: 0px 0px 5px #0003;
+}
+
+.verde {
+    background: var(--verde);
+}
+
+.azul {
+    background: var(--azul);
+}
+
+.main {
+    padding: 80px 20px;
+}
+
+.seccion__1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.seccion__1 .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.seccion__1 .parrafo {
+    text-align: center;
+}
+.seccion__1 .imagen {
+    width: 100%;
+    margin: 30px 0;
+    min-width: 200px;
+    max-width: 700px;
+}
+
+.registro-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.seccion__2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.seccion__2 .imagen{
+    width: 100%;
+    min-width: 200px;
+    max-width: 900px;
+}
+.seccion__2 .titulo {
+    text-align: center;
+}
+.seccion__2 .parrafo {
+    text-align: center;
+}
+
+.seccion__3 {
+    text-align: center;
+}   
+
+.seccion__3-texto {
+    margin-bottom: 50px;
+}
+.seccion__3 .titulo {
+    margin: 10px 0;
+}
+
+
+
+
+.contendor-card{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.card {
+    text-align: center;
+}
+
+.card .titulo{
+    margin: 10px 0;
+    margin-top: 25px;
+}
+
+
+
+.seccion-empresas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+
+.seccion__4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 30px;
+    background: #f5f6f8;
+    gap: 30px;
+
+}
+
+.footer .logo {
+    width: 50px;
+}
+
+.footer-lista{
+    list-style: none;
+}
+
+.lista-link {
+    padding: 5px 0;
+    color: var(--gris);
+}
+
+.footer-redes {
+    display: inline-flex;
+    gap: 10px;
+}
+
+
+
+
+@media screen and (min-width:375px){
+    
+    .parrafo {
+        font-size: 16px;
+    }
+
+    .header-texto .titulo {
+        font-size: 30px;
+    }
+
+    .main {
+        padding: 90px 30px;
+    }
+
+    .seccion__1 {
+        margin: 50px 0;
+    }
+
+    .seccion__1 .titulo {
+        font-size: 30px;
+    }
+
+    .registro-card .titulo {
+        font-size: 25px;
+    }
+
+
+    .seccion__4 .titulo{
+        font-size: 30px;
+    }
+
+}
+
+
+@media screen and (min-width:900px){
+
+    .parrafo {
+        font-size: 18px;
+    }
+
+    .header-fondo .mobile {
+        display: none;
+    }
+
+    .header-fondo .desktop {
+        display: block;
+        width: 100%;
+    }
+
+    .header-texto {
+        align-items: center;
+        gap: 30px;
+    }
+    .header-texto .titulo {
+        font-size: 40px;
+    }
+    .header-texto .parrafo {
+        width: 50%;
+    }
+    .contenedor-botones {
+        flex-direction: row;
+    }
+
+    .btn {
+        padding: 14px 40px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: opacity .5s;
+    }
+
+    .btn:hover{
+        opacity: .6;
+    }
+
+
+    .seccion__1 .seccion-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion__1 .titulo {
+        font-size: 35px;
+    }
+    .seccion__1 .parrafo {
+        width: 55%;
+    }
+    .seccion__1 .imagen {
+        position: relative;
+        left: -80px
+    }
+
+    .resgistro-contenedor {
+        position: relative; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .registro-card {
+        width: 500px;
+        gap: 50px;
+    }
+    .card {
+        align-items: flex-start;
+    }
+    .texto .titulo{
+        text-align: left;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .texto .parrafo {
+        text-align: left;
+        width: 80%;
+    }
+
+    .seccion__2 { 
+        align-items: center;
+    }
+
+    .seccion__2 .titulo{
+        font-size: 35px;
+    }
+    .seccion__2 .parrafo {
+        width: 55%;
+    }
+
+    .seccion__3-texto .titulo{
+        font-size: 35px;
+    }
+
+
+    .contendor-card{ 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 420px;
+    }
+
+    .seccion-empresas {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .seccion__4 {
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion__4 .parrafo {
+        width: 55%;
+    }
+
+    .footer {
+        padding: 50px 80px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .lista-link {
+        text-align: left;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 17px;
+        transition: color .5s;
+    }
+    .lista-link:hover {
+        color: var(--verde);
+    }
+    .footer-redes {
+        gap: 20px;
+    }
+    .footer-redes .fab {
+        color: var(--gris);
+        font-size: 20px;
+        cursor: pointer;
+        transition: color .5s;
+    }
+    .footer-redes .fab:hover{
+        color: var(--verde);
+    }
+
+}
